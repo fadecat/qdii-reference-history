@@ -3,13 +3,18 @@ name: archive-xop-reference
 on:
   workflow_dispatch:
   schedule:
-    - cron: "10,30,50 20-22 * * 1-5"
+    - cron: "10 20 * * 1-5"
+    - cron: "30 20 * * 1-5"
+    - cron: "50 20 * * 1-5"
+    - cron: "10 21 * * 1-5"
 
 jobs:
   archive:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      FINAL_SLOT_UTC_HM: "2110"
 
     steps:
       - name: Checkout
@@ -21,16 +26,123 @@ jobs:
           python-version: "3.12"
 
       - name: Archive XOP reference snapshots
-        run: python scripts/archive_xop_reference.py
+        id: archive
+        run: |
+          mkdir -p artifacts
+          python scripts/archive_xop_reference.py --result-path artifacts/archive_result.json
+          echo "result_path=artifacts/archive_result.json" >> "$GITHUB_OUTPUT"
 
       - name: Commit changes
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add snapshots raw
           if git diff --cached --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
             echo "No snapshot changes to commit."
             exit 0
           fi
           git commit -m "chore: archive xop reference snapshot"
           git push
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Detect final schedule window
+        id: final_slot
+        if: ${{ always() }}
+        run: |
+          echo "current_utc_hm=$(date -u +%H%M)" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "is_final_slot=true" >> "$GITHUB_OUTPUT"
+          elif [ "$(date -u +%H%M)" = "${FINAL_SLOT_UTC_HM}" ]; then
+            echo "is_final_slot=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_final_slot=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Notify WeCom success
+        if: ${{ success() && secrets.WECOM_WEBHOOK_URL != '' }}
+        env:
+          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+          COMMIT_SHA: ${{ steps.commit.outputs.commit_sha }}
+          COMMITTED: ${{ steps.commit.outputs.committed }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          from pathlib import Path
+
+          result = json.loads(Path("artifacts/archive_result.json").read_text(encoding="utf-8"))
+          xop = result["symbols"]["XOP"]
+          xop_iv = result["symbols"]["^XOP-IV"]
+          lines = [
+              "XOP 参考归档成功",
+              f"美东日期: {xop['market_date']}",
+              f"XOP: {xop['latest_value']}",
+              f"^XOP-IV: {xop_iv['latest_value']}",
+              f"尝试次数: {result.get('attempt')}/{result.get('attempts')}",
+              f"有无新变更: {result.get('has_changes')}",
+              f"是否提交: {os.environ.get('COMMITTED', 'false')}",
+              f"commit: {os.environ.get('COMMIT_SHA', '')}",
+          ]
+          payload = {
+              "msgtype": "text",
+              "text": {
+                  "content": "\n".join(lines)
+              }
+          }
+          data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+          req = urllib.request.Request(
+              os.environ["WECOM_WEBHOOK_URL"],
+              data=data,
+              headers={"Content-Type": "application/json"},
+          )
+          with urllib.request.urlopen(req, timeout=20) as resp:
+              print(resp.read().decode("utf-8"))
+          PY
+
+      - name: Notify WeCom failure
+        if: ${{ failure() && secrets.WECOM_WEBHOOK_URL != '' && steps.final_slot.outputs.is_final_slot == 'true' }}
+        env:
+          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          from pathlib import Path
+
+          result_path = Path("artifacts/archive_result.json")
+          if result_path.exists():
+              result = json.loads(result_path.read_text(encoding="utf-8"))
+              errors = result.get("errors", [])
+              latest_error = errors[-1] if errors else {}
+              lines = [
+                  "XOP 参考归档失败",
+                  f"尝试次数: {result.get('attempts')}",
+                  f"最后错误类型: {latest_error.get('error_type', '')}",
+                  f"最后错误信息: {latest_error.get('error_message', '')}",
+              ]
+          else:
+              lines = [
+                  "XOP 参考归档失败",
+                  "未生成 archive_result.json，请检查 workflow 日志。",
+              ]
+          payload = {
+              "msgtype": "text",
+              "text": {
+                  "content": "\n".join(lines)
+              }
+          }
+          data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+          req = urllib.request.Request(
+              os.environ["WECOM_WEBHOOK_URL"],
+              data=data,
+              headers={"Content-Type": "application/json"},
+          )
+          with urllib.request.urlopen(req, timeout=20) as resp:
+              print(resp.read().decode("utf-8"))
+          PY

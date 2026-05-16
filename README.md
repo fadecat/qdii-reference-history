@@ -37,3 +37,40 @@ HTTP_PROXY=http://127.0.0.1:7890 HTTPS_PROXY=http://127.0.0.1:7890 python script
 - 同一交易日重复运行时，只更新对应日期文件，不新增脏重复文件
 - 归档仓库只负责保存快照
 - 业务 API 应先同步到本地数据库，再由本地数据库对外提供回补能力
+
+## GitHub Actions
+
+当前 workflow：
+
+- 文件：
+  `.github/workflows/archive-xop-reference.yml`
+- 触发时点：
+  - `20:10 UTC`
+  - `20:30 UTC`
+  - `20:50 UTC`
+  - `21:10 UTC`
+
+按夏令时看，大白话就是：
+
+- 美东收盘后 `10 / 30 / 50 / 70` 分钟各抓一次
+
+单次 workflow 内部还会再重试：
+
+- 默认重试 `3` 次
+- 默认回退等待：
+  - `60s`
+  - `180s`
+  - `300s`
+
+## GitHub Secrets
+
+你需要在仓库里设置：
+
+- `WECOM_WEBHOOK_URL`
+  大白话：企业微信机器人 webhook 地址
+
+通知规则：
+
+- 成功归档：发送成功通知
+- 失败：只在当天最后一个定时窗口发送失败通知，避免前面几个窗口失败时反复刷屏
+- `workflow_dispatch` 手工触发：失败也会直接通知

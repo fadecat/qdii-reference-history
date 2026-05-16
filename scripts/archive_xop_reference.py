@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+import argparse
 import json
-import urllib.parse
+import os
+import subprocess
+import sys
+import time
 import urllib.request
 from datetime import UTC
 from datetime import datetime
@@ -17,6 +21,8 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/148.0.0.0 Safari/537.36"
 )
+DEFAULT_ATTEMPTS = 3
+DEFAULT_BACKOFF_SECONDS = [60, 180, 300]
 
 SYMBOLS = [
     {
@@ -171,6 +177,25 @@ def _write_json(target: Path, payload: dict[str, object] | list[object] | str) -
         )
 
 
+def _git_dirty_paths() -> list[str]:
+    result = subprocess.run(
+        ["git", "status", "--short"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    paths: list[str] = []
+    for line in result.stdout.splitlines():
+        cleaned = line.strip()
+        if not cleaned:
+            continue
+        parts = cleaned.split(maxsplit=1)
+        if len(parts) == 2:
+            paths.append(parts[1])
+    return paths
+
+
 def archive_symbol(symbol_config: dict[str, object]) -> dict[str, object]:
     encoded_symbol = str(symbol_config["encoded_symbol"])
     chart_url = f"https://query1.finance.yahoo.com/v8/finance/chart/{encoded_symbol}?range=5d&interval=1d"
@@ -189,12 +214,109 @@ def archive_symbol(symbol_config: dict[str, object]) -> dict[str, object]:
         "market_date": market_date,
         "snapshot_path": snapshot_path.relative_to(REPO_ROOT).as_posix(),
         "raw_path": raw_path.relative_to(REPO_ROOT).as_posix(),
+        "latest_value": snapshot["latest_bar"]["adjclose"] or snapshot["latest_bar"]["close"],
+        "source_url": snapshot["source_url"],
     }
 
 
+def archive_once() -> dict[str, object]:
+    capture_meta = _now_bundle()
+    archived = [archive_symbol(symbol_config) for symbol_config in SYMBOLS]
+    dirty_paths = _git_dirty_paths()
+    by_symbol = {item["symbol"]: item for item in archived}
+    return {
+        "status": "success",
+        "captured_at_utc": capture_meta["captured_at_utc"],
+        "captured_at_shanghai": capture_meta["captured_at_shanghai"],
+        "captured_at_new_york": capture_meta["captured_at_new_york"],
+        "archived": archived,
+        "symbols": {
+            "XOP": by_symbol.get("XOP"),
+            "^XOP-IV": by_symbol.get("^XOP-IV"),
+        },
+        "changed_paths": dirty_paths,
+        "has_changes": bool(dirty_paths),
+    }
+
+
+def archive_with_retry(*, attempts: int, backoff_seconds: list[int], sleep_enabled: bool) -> dict[str, object]:
+    errors: list[dict[str, object]] = []
+    for attempt in range(1, attempts + 1):
+        try:
+            result = archive_once()
+            result["attempt"] = attempt
+            result["attempts"] = attempts
+            result["errors"] = errors
+            return result
+        except Exception as exc:
+            error_row = {
+                "attempt": attempt,
+                "error_type": type(exc).__name__,
+                "error_message": str(exc),
+            }
+            errors.append(error_row)
+            if attempt >= attempts:
+                break
+            sleep_seconds = backoff_seconds[min(attempt - 1, len(backoff_seconds) - 1)]
+            if sleep_enabled:
+                time.sleep(sleep_seconds)
+
+    return {
+        "status": "failed",
+        "attempts": attempts,
+        "errors": errors,
+        "captured_at_utc": datetime.now(UTC).isoformat(),
+        "captured_at_shanghai": datetime.now(UTC).astimezone(SH_TZ).isoformat(),
+        "captured_at_new_york": datetime.now(UTC).astimezone(NY_TZ).isoformat(),
+    }
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--attempts", type=int, default=DEFAULT_ATTEMPTS)
+    parser.add_argument(
+        "--backoff-seconds",
+        type=str,
+        default=",".join(str(value) for value in DEFAULT_BACKOFF_SECONDS),
+    )
+    parser.add_argument(
+        "--result-path",
+        type=str,
+        default="",
+        help="Optional path to save structured result JSON.",
+    )
+    parser.add_argument(
+        "--no-sleep",
+        action="store_true",
+        help="Disable retry sleeping, useful for local quick verification.",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
-    results = [archive_symbol(symbol_config) for symbol_config in SYMBOLS]
-    print(json.dumps({"archived": results}, ensure_ascii=False, indent=2))
+    args = parse_args()
+    backoff_seconds = [
+        int(part.strip())
+        for part in args.backoff_seconds.split(",")
+        if part.strip()
+    ]
+    result = archive_with_retry(
+        attempts=args.attempts,
+        backoff_seconds=backoff_seconds,
+        sleep_enabled=not args.no_sleep,
+    )
+
+    if args.result_path:
+        result_path = Path(args.result_path)
+        result_path.parent.mkdir(parents=True, exist_ok=True)
+        result_path.write_text(
+            json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    if result.get("status") != "success":
+        sys.exit(1)
 
 
 if __name__ == "__main__":
