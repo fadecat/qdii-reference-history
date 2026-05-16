@@ -6,6 +6,7 @@
 
 - `XOP` ETF 日收盘价
 - `^XOP-IV` 日内估值指数最新值
+- `USCNY` 官方中间价
 
 ## 目录
 
@@ -15,6 +16,10 @@
   大白话：`^XOP-IV` 的当日快照
 - `raw/yahoo/chart/...`
   大白话：抓取时保存的原始 Yahoo chart 响应
+- `snapshots/chinamoney/uscny/daily/YYYY/MM/YYYY-MM-DD.json`
+  大白话：`USCNY` 的当日官方中间价快照
+- `raw/chinamoney/ccpr/...`
+  大白话：抓取时保存的原始 `ccpr.json`
 
 ## 用法
 
@@ -22,12 +27,14 @@
 
 ```bash
 python scripts/archive_xop_reference.py
+python scripts/archive_uscny_reference.py
 ```
 
 如果本地需要代理：
 
 ```bash
 HTTP_PROXY=http://127.0.0.1:7890 HTTPS_PROXY=http://127.0.0.1:7890 python scripts/archive_xop_reference.py
+HTTP_PROXY=http://127.0.0.1:7890 HTTPS_PROXY=http://127.0.0.1:7890 python scripts/archive_uscny_reference.py
 ```
 
 ## 设计原则
@@ -55,6 +62,28 @@ HTTP_PROXY=http://127.0.0.1:7890 HTTPS_PROXY=http://127.0.0.1:7890 python script
 - 美东收盘后 `10 / 30 / 50 / 70` 分钟各抓一次
 
 单次 workflow 内部还会再重试：
+
+- 默认重试 `3` 次
+- 默认回退等待：
+  - `60s`
+  - `180s`
+  - `300s`
+
+另一个 `USCNY` workflow：
+
+- 文件：
+  `.github/workflows/archive-uscny-reference.yml`
+- 触发时点：
+  - `01:16 UTC`
+  - `01:30 UTC`
+  - `01:50 UTC`
+  - `02:10 UTC`
+
+按北京时间看，大白话就是：
+
+- 上午 `09:16 / 09:30 / 09:50 / 10:10` 各抓一次
+
+单次 workflow 内部同样会重试：
 
 - 默认重试 `3` 次
 - 默认回退等待：
