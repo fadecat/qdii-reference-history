@@ -63,7 +63,7 @@ jobs:
           fi
 
       - name: Notify WeCom success
-        if: ${{ success() && secrets.WECOM_WEBHOOK_URL != '' }}
+        if: ${{ success() }}
         env:
           WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
           COMMIT_SHA: ${{ steps.commit.outputs.commit_sha }}
@@ -74,6 +74,11 @@ jobs:
           import os
           import urllib.request
           from pathlib import Path
+
+          webhook = os.environ.get("WECOM_WEBHOOK_URL", "").strip()
+          if not webhook:
+              print("WECOM_WEBHOOK_URL is empty, skip success notification.")
+              raise SystemExit(0)
 
           result = json.loads(Path("artifacts/archive_result.json").read_text(encoding="utf-8"))
           xop = result["symbols"]["XOP"]
@@ -96,7 +101,7 @@ jobs:
           }
           data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
           req = urllib.request.Request(
-              os.environ["WECOM_WEBHOOK_URL"],
+              webhook,
               data=data,
               headers={"Content-Type": "application/json"},
           )
@@ -105,7 +110,7 @@ jobs:
           PY
 
       - name: Notify WeCom failure
-        if: ${{ failure() && secrets.WECOM_WEBHOOK_URL != '' && steps.final_slot.outputs.is_final_slot == 'true' }}
+        if: ${{ failure() && steps.final_slot.outputs.is_final_slot == 'true' }}
         env:
           WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
         run: |
@@ -114,6 +119,11 @@ jobs:
           import os
           import urllib.request
           from pathlib import Path
+
+          webhook = os.environ.get("WECOM_WEBHOOK_URL", "").strip()
+          if not webhook:
+              print("WECOM_WEBHOOK_URL is empty, skip failure notification.")
+              raise SystemExit(0)
 
           result_path = Path("artifacts/archive_result.json")
           if result_path.exists():
@@ -139,7 +149,7 @@ jobs:
           }
           data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
           req = urllib.request.Request(
-              os.environ["WECOM_WEBHOOK_URL"],
+              webhook,
               data=data,
               headers={"Content-Type": "application/json"},
           )
