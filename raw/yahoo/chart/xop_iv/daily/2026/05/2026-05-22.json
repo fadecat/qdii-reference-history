@@ -32,7 +32,7 @@
           ]
         },
         "meta": {
-          "chartPreviousClose": 170.6613,
+          "chartPreviousClose": 170.661,
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
@@ -57,8 +57,8 @@
           "dataGranularity": "1d",
           "exchangeName": "ASE",
           "exchangeTimezoneName": "America/New_York",
-          "fiftyTwoWeekHigh": 172.4594,
-          "fiftyTwoWeekLow": 169.7152,
+          "fiftyTwoWeekHigh": 172.459,
+          "fiftyTwoWeekLow": 169.715,
           "firstTradeDate": null,
           "fullExchangeName": "NYSE American",
           "gmtoffset": -14400,
@@ -67,9 +67,9 @@
           "longName": "SPDR S&P Oil and Gas Explorat",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketDayHigh": 172.4594,
-          "regularMarketDayLow": 169.7152,
-          "regularMarketPrice": 172.0016,
+          "regularMarketDayHigh": 172.459,
+          "regularMarketDayLow": 169.715,
+          "regularMarketPrice": 172.002,
           "regularMarketTime": 1779481785,
           "regularMarketVolume": 0,
           "shortName": "SPDR S&P Oil  and  Gas Explorat",

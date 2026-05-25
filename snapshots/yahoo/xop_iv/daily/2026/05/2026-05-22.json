@@ -1,7 +1,7 @@
 {
-  "captured_at_new_york": "2026-05-22T18:14:58.905022-04:00",
-  "captured_at_shanghai": "2026-05-23T06:14:58.905022+08:00",
-  "captured_at_utc": "2026-05-22T22:14:58.905022+00:00",
+  "captured_at_new_york": "2026-05-25T17:22:06.485494-04:00",
+  "captured_at_shanghai": "2026-05-26T05:22:06.485494+08:00",
+  "captured_at_utc": "2026-05-25T21:22:06.485494+00:00",
   "encoded_symbol": "%5EXOP-IV",
   "history_summary": {
     "bar_count": 1,
@@ -22,13 +22,13 @@
   "market_date": "2026-05-22",
   "market_timezone": "America/New_York",
   "meta": {
-    "chart_previous_close": 170.6613,
+    "chart_previous_close": 170.661,
     "currency": "USD",
     "exchange_name": "ASE",
     "full_exchange_name": "NYSE American",
     "instrument_type": "INDEX",
     "previous_close": null,
-    "regular_market_price": 172.0016,
+    "regular_market_price": 172.002,
     "regular_market_time": 1779481785
   },
   "provider": "yahoo_chart",
