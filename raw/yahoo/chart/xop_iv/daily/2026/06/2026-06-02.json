@@ -1,0 +1,89 @@
+{
+  "chart": {
+    "error": null,
+    "result": [
+      {
+        "indicators": {
+          "adjclose": [
+            {
+              "adjclose": [
+                168.84609985351562
+              ]
+            }
+          ],
+          "quote": [
+            {
+              "close": [
+                168.84609985351562
+              ],
+              "high": [
+                169.8697052001953
+              ],
+              "low": [
+                167.01199340820312
+              ],
+              "open": [
+                167.94679260253906
+              ],
+              "volume": [
+                0
+              ]
+            }
+          ]
+        },
+        "meta": {
+          "chartPreviousClose": 167.952,
+          "currency": "USD",
+          "currentTradingPeriod": {
+            "post": {
+              "end": 1780444800,
+              "gmtoffset": -14400,
+              "start": 1780430400,
+              "timezone": "EDT"
+            },
+            "pre": {
+              "end": 1780407000,
+              "gmtoffset": -14400,
+              "start": 1780387200,
+              "timezone": "EDT"
+            },
+            "regular": {
+              "end": 1780430400,
+              "gmtoffset": -14400,
+              "start": 1780407000,
+              "timezone": "EDT"
+            }
+          },
+          "dataGranularity": "1d",
+          "exchangeName": "ASE",
+          "exchangeTimezoneName": "America/New_York",
+          "fiftyTwoWeekHigh": 169.87,
+          "fiftyTwoWeekLow": 167.012,
+          "firstTradeDate": null,
+          "fullExchangeName": "NYSE American",
+          "gmtoffset": -14400,
+          "hasPrePostMarketData": false,
+          "instrumentType": "INDEX",
+          "longName": "SPDR S&P Oil and Gas Explorat",
+          "priceHint": 2,
+          "range": "5d",
+          "regularMarketDayHigh": 169.87,
+          "regularMarketDayLow": 167.012,
+          "regularMarketPrice": 168.846,
+          "regularMarketTime": 1780432185,
+          "regularMarketVolume": 0,
+          "shortName": "SPDR S&P Oil  and  Gas Explorat",
+          "symbol": "^XOP-IV",
+          "timezone": "EDT",
+          "validRanges": [
+            "1d",
+            "5d"
+          ]
+        },
+        "timestamp": [
+          1780432185
+        ]
+      }
+    ]
+  }
+}
