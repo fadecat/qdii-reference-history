@@ -1,0 +1,126 @@
+{
+  "chart": {
+    "error": null,
+    "result": [
+      {
+        "indicators": {
+          "adjclose": [
+            {
+              "adjclose": [
+                171.02000427246094,
+                165.99000549316406,
+                168.38999938964844,
+                164.0500030517578,
+                167.99000549316406
+              ]
+            }
+          ],
+          "quote": [
+            {
+              "close": [
+                171.02000427246094,
+                165.99000549316406,
+                168.38999938964844,
+                164.0500030517578,
+                167.99000549316406
+              ],
+              "high": [
+                171.72999572753906,
+                170.9600067138672,
+                170.63999938964844,
+                167.4499969482422,
+                170.51499938964844
+              ],
+              "low": [
+                168.50999450683594,
+                165.9600067138672,
+                167.80999755859375,
+                161.75,
+                165.4199981689453
+              ],
+              "open": [
+                169.27000427246094,
+                170.47999572753906,
+                168.10000610351562,
+                167.0500030517578,
+                165.52999877929688
+              ],
+              "volume": [
+                4039800,
+                2357600,
+                3083700,
+                6141100,
+                2826663
+              ]
+            }
+          ]
+        },
+        "meta": {
+          "chartPreviousClose": 171.13,
+          "currency": "USD",
+          "currentTradingPeriod": {
+            "post": {
+              "end": 1781136000,
+              "gmtoffset": -14400,
+              "start": 1781121600,
+              "timezone": "EDT"
+            },
+            "pre": {
+              "end": 1781098200,
+              "gmtoffset": -14400,
+              "start": 1781078400,
+              "timezone": "EDT"
+            },
+            "regular": {
+              "end": 1781121600,
+              "gmtoffset": -14400,
+              "start": 1781098200,
+              "timezone": "EDT"
+            }
+          },
+          "dataGranularity": "1d",
+          "exchangeName": "PCX",
+          "exchangeTimezoneName": "America/New_York",
+          "fiftyTwoWeekHigh": 190.36,
+          "fiftyTwoWeekLow": 121.46,
+          "firstTradeDate": 1150983000,
+          "fullExchangeName": "NYSEArca",
+          "gmtoffset": -14400,
+          "hasPrePostMarketData": true,
+          "instrumentType": "ETF",
+          "longName": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
+          "priceHint": 2,
+          "range": "5d",
+          "regularMarketDayHigh": 170.515,
+          "regularMarketDayLow": 165.42,
+          "regularMarketPrice": 167.99,
+          "regularMarketTime": 1781121600,
+          "regularMarketVolume": 2826663,
+          "shortName": "State Street SPDR S&P Oil & Gas",
+          "symbol": "XOP",
+          "timezone": "EDT",
+          "validRanges": [
+            "1d",
+            "5d",
+            "1mo",
+            "3mo",
+            "6mo",
+            "1y",
+            "2y",
+            "5y",
+            "10y",
+            "ytd",
+            "max"
+          ]
+        },
+        "timestamp": [
+          1780579800,
+          1780666200,
+          1780925400,
+          1781011800,
+          1781098200
+        ]
+      }
+    ]
+  }
+}
