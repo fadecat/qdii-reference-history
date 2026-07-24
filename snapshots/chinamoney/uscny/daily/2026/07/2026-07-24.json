@@ -1,0 +1,23 @@
+{
+  "bp": "33.00",
+  "bp_double": 33.0,
+  "captured_at_shanghai": "2026-07-24T12:35:02.674770+08:00",
+  "captured_at_utc": "2026-07-24T04:35:02.674770+00:00",
+  "market_date": "2026-07-24",
+  "meta": {
+    "foreign_code": "USD",
+    "last_date_en": "24/07/2026 9:15",
+    "provider": "CWAP",
+    "rep_code": "200",
+    "rep_message": "",
+    "vrt_name": "美元/人民币"
+  },
+  "price": 6.7939,
+  "provider": "chinamoney_ccpr",
+  "published_at_source": "2026-07-24 9:15",
+  "reference_pair": "USD/CNY",
+  "schema_version": 1,
+  "source_quality": "official_fixing",
+  "source_url": "https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/fx/ccpr.json",
+  "symbol": "USCNY"
+}
