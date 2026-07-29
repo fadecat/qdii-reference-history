@@ -1,7 +1,7 @@
 {
-  "captured_at_new_york": "2026-07-29T17:11:00.434183-04:00",
-  "captured_at_shanghai": "2026-07-30T05:11:00.434183+08:00",
-  "captured_at_utc": "2026-07-29T21:11:00.434183+00:00",
+  "captured_at_new_york": "2026-07-29T17:27:56.592111-04:00",
+  "captured_at_shanghai": "2026-07-30T05:27:56.592111+08:00",
+  "captured_at_utc": "2026-07-29T21:27:56.592111+00:00",
   "encoded_symbol": "%5EXOP-IV",
   "history_summary": {
     "bar_count": 1,
@@ -10,13 +10,13 @@
   "instrument_label": "SPDR S&P Oil & Gas Exploration & Production ETF indicative value",
   "latest_bar": {
     "adjclose": 171.97650146484375,
-    "bar_market_datetime": "2026-07-29T16:27:30-04:00",
+    "bar_market_datetime": "2026-07-29T16:29:45-04:00",
     "close": 171.97650146484375,
     "high": 172.4611053466797,
     "low": 166.29269409179688,
     "open": 166.29269409179688,
-    "regular_market_datetime": "2026-07-29T16:27:30-04:00",
-    "timestamp": 1785356850,
+    "regular_market_datetime": "2026-07-29T16:29:45-04:00",
+    "timestamp": 1785356985,
     "volume": 0.0
   },
   "market_date": "2026-07-29",
@@ -29,7 +29,7 @@
     "instrument_type": "INDEX",
     "previous_close": null,
     "regular_market_price": 171.9765,
-    "regular_market_time": 1785356850
+    "regular_market_time": 1785356985
   },
   "provider": "yahoo_chart",
   "schema_version": 1,
