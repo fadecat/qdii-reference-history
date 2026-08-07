@@ -50,7 +50,7 @@
                 3250600,
                 4195600,
                 2715400,
-                2114369
+                2228140
               ]
             }
           ]
@@ -95,7 +95,7 @@
           "regularMarketDayLow": 164.355,
           "regularMarketPrice": 166.4,
           "regularMarketTime": 1786132800,
-          "regularMarketVolume": 2114369,
+          "regularMarketVolume": 2228140,
           "shortName": "State Street SPDR S&P Oil & Gas",
           "symbol": "XOP",
           "timezone": "EDT",
