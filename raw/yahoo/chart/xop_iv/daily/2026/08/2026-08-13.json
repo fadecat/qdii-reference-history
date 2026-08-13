@@ -70,7 +70,7 @@
           "regularMarketDayHigh": 179.2482,
           "regularMarketDayLow": 175.3157,
           "regularMarketPrice": 179.0899,
-          "regularMarketTime": 1786652565,
+          "regularMarketTime": 1786652985,
           "regularMarketVolume": 0,
           "shortName": "SPDR S&P Oil  and  Gas Explorat",
           "symbol": "^XOP-IV",
@@ -81,7 +81,7 @@
           ]
         },
         "timestamp": [
-          1786652565
+          1786652985
         ]
       }
     ]
