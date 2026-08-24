@@ -70,7 +70,7 @@
           "regularMarketDayHigh": 189.4984,
           "regularMarketDayLow": 184.3254,
           "regularMarketPrice": 186.1953,
-          "regularMarketTime": 1787602365,
+          "regularMarketTime": 1787603265,
           "regularMarketVolume": 0,
           "shortName": "Northern Trust iBoxx 5-Year Tar",
           "symbol": "^XOP-IV",
@@ -81,7 +81,7 @@
           ]
         },
         "timestamp": [
-          1787602365
+          1787603265
         ]
       }
     ]
