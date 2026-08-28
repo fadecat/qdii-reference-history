@@ -17,13 +17,13 @@
                 185.42579650878906
               ],
               "high": [
-                186.1927032470703
+                0.0
               ],
               "low": [
-                181.84620666503906
+                0.0
               ],
               "open": [
-                184.4071044921875
+                0.0
               ],
               "volume": [
                 0
@@ -57,8 +57,8 @@
           "dataGranularity": "1d",
           "exchangeName": "ASE",
           "exchangeTimezoneName": "America/New_York",
-          "fiftyTwoWeekHigh": 186.1927,
-          "fiftyTwoWeekLow": 181.8462,
+          "fiftyTwoWeekHigh": 0.0,
+          "fiftyTwoWeekLow": 0.0,
           "firstTradeDate": null,
           "fullExchangeName": "NYSE American",
           "gmtoffset": -14400,
@@ -67,8 +67,8 @@
           "longName": "Northern Trust iBoxx 5-Year Tar",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketDayHigh": 186.1927,
-          "regularMarketDayLow": 181.8462,
+          "regularMarketDayHigh": 0.0,
+          "regularMarketDayLow": 0.0,
           "regularMarketPrice": 185.4258,
           "regularMarketTime": 1787862585,
           "regularMarketVolume": 0,
