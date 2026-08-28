@@ -1,0 +1,40 @@
+{
+  "captured_at_new_york": "2026-08-28T00:21:05.692468-04:00",
+  "captured_at_shanghai": "2026-08-28T12:21:05.692468+08:00",
+  "captured_at_utc": "2026-08-28T04:21:05.692468+00:00",
+  "formula": "kweb_nav = market_close * (1 - premium_discount)",
+  "krane_premium_discount_row": {
+    "premium_discount": -0.006621223,
+    "source_market_datetime": "2026-08-26T20:00:00-04:00",
+    "source_timestamp_ms": 1787788800000,
+    "source_utc_datetime": "2026-08-27T00:00:00+00:00"
+  },
+  "krane_product_id": "7615",
+  "kweb_nav": 26.272814304295522,
+  "market_close": 26.100000381469727,
+  "market_date": "2026-08-27",
+  "market_timezone": "America/New_York",
+  "premium_discount": -0.006621223,
+  "provider": "krane_yahoo_derived",
+  "schema_version": 1,
+  "series_kind": "nav_like_reference",
+  "source_quality": "derived_from_official_and_market_inputs",
+  "sources": {
+    "krane_premium_discount_url": "https://kraneshares.com/product-json/?pid=7615&type=premium-discount&start=2026-08-27&end=2026-08-27",
+    "krane_product_page_url": "https://kraneshares.com/etf/kweb/",
+    "yahoo_chart_url": "https://query1.finance.yahoo.com/v7/finance/chart/KWEB?range=5d&interval=1d&includePrePost=false"
+  },
+  "symbol": "KWEB",
+  "yahoo_latest_bar": {
+    "close_price": 26.100000381469727,
+    "market_datetime": "2026-08-27T09:30:00-04:00",
+    "timestamp": 1787837400
+  },
+  "yahoo_meta": {
+    "currency": "USD",
+    "exchange_name": "PCX",
+    "instrument_type": "ETF",
+    "previous_close": null,
+    "regular_market_price": 26.1
+  }
+}
