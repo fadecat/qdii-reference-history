@@ -1,11 +1,11 @@
 {
-  "captured_at_new_york": "2026-09-01T18:50:49.555360-04:00",
-  "captured_at_shanghai": "2026-09-02T06:50:49.555360+08:00",
-  "captured_at_utc": "2026-09-01T22:50:49.555360+00:00",
+  "captured_at_new_york": "2026-09-01T19:15:06.383700-04:00",
+  "captured_at_shanghai": "2026-09-02T07:15:06.383700+08:00",
+  "captured_at_utc": "2026-09-01T23:15:06.383700+00:00",
   "encoded_symbol": "XOP",
   "history_summary": {
     "bar_count": 5,
-    "latest_non_null_close_count": 5
+    "latest_non_null_close_count": 4
   },
   "instrument_label": "SPDR S&P Oil & Gas Exploration & Production ETF",
   "latest_bar": {
