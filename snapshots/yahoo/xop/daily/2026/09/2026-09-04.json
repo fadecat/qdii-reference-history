@@ -1,7 +1,7 @@
 {
-  "captured_at_new_york": "2026-09-04T19:00:09.067291-04:00",
-  "captured_at_shanghai": "2026-09-05T07:00:09.067291+08:00",
-  "captured_at_utc": "2026-09-04T23:00:09.067291+00:00",
+  "captured_at_new_york": "2026-09-07T18:48:33.974595-04:00",
+  "captured_at_shanghai": "2026-09-08T06:48:33.974595+08:00",
+  "captured_at_utc": "2026-09-07T22:48:33.974595+00:00",
   "encoded_symbol": "XOP",
   "history_summary": {
     "bar_count": 5,
@@ -12,12 +12,12 @@
     "adjclose": 190.7100067138672,
     "bar_market_datetime": "2026-09-04T09:30:00-04:00",
     "close": 190.7100067138672,
-    "high": 191.60000610351562,
+    "high": 191.61000061035156,
     "low": 188.1999969482422,
     "open": 191.0500030517578,
     "regular_market_datetime": "2026-09-04T16:00:00-04:00",
     "timestamp": 1788528600,
-    "volume": 1480621.0
+    "volume": 1503600.0
   },
   "market_date": "2026-09-04",
   "market_timezone": "America/New_York",

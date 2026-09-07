@@ -29,7 +29,7 @@
                 192.75999450683594,
                 194.8300018310547,
                 194.52000427246094,
-                191.60000610351562
+                191.61000061035156
               ],
               "low": [
                 185.64999389648438,
@@ -50,7 +50,7 @@
                 2822700,
                 1784100,
                 2282500,
-                1480621
+                1503600
               ]
             }
           ]
@@ -87,7 +87,7 @@
           "fullExchangeName": "NYSEArca",
           "fulldayChange": -1.62,
           "fulldayChangePercent": -0.842,
-          "fulldayPrice": 190.01,
+          "fulldayPrice": 191.69,
           "gmtoffset": -14400,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
