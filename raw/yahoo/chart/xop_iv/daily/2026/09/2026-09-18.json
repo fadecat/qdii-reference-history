@@ -1,0 +1,93 @@
+{
+  "chart": {
+    "error": null,
+    "result": [
+      {
+        "indicators": {
+          "adjclose": [
+            {
+              "adjclose": [
+                190.69760131835938
+              ]
+            }
+          ],
+          "quote": [
+            {
+              "close": [
+                190.69760131835938
+              ],
+              "high": [
+                193.1381072998047
+              ],
+              "low": [
+                190.59930419921875
+              ],
+              "open": [
+                192.57449340820312
+              ],
+              "volume": [
+                0
+              ]
+            }
+          ]
+        },
+        "meta": {
+          "chartPreviousClose": 192.5785,
+          "currency": "USD",
+          "currentTradingPeriod": {
+            "post": {
+              "end": 1789776000,
+              "gmtoffset": -14400,
+              "start": 1789761600,
+              "timezone": "EDT"
+            },
+            "pre": {
+              "end": 1789738200,
+              "gmtoffset": -14400,
+              "start": 1789718400,
+              "timezone": "EDT"
+            },
+            "regular": {
+              "end": 1789761600,
+              "gmtoffset": -14400,
+              "start": 1789738200,
+              "timezone": "EDT"
+            }
+          },
+          "dataGranularity": "1d",
+          "exchangeName": "ASE",
+          "exchangeTimezoneName": "America/New_York",
+          "fiftyTwoWeekHigh": 193.1381,
+          "fiftyTwoWeekLow": 190.5993,
+          "firstTradeDate": null,
+          "fullExchangeName": "NYSE American",
+          "fulldayChange": -1.8809,
+          "fulldayChangePercent": -0.9767,
+          "fulldayPrice": 190.6976,
+          "gmtoffset": -14400,
+          "hasPrePostMarketData": false,
+          "instrumentType": "INDEX",
+          "longName": "Northern Trust iBoxx 5-Year Tar",
+          "priceHint": 2,
+          "range": "5d",
+          "regularMarketChangePercent": -0.9767,
+          "regularMarketDayHigh": 193.1381,
+          "regularMarketDayLow": 190.5993,
+          "regularMarketPrice": 190.6976,
+          "regularMarketTime": 1789763385,
+          "regularMarketVolume": 0,
+          "shortName": "Northern Trust iBoxx 5-Year Tar",
+          "symbol": "^XOP-IV",
+          "timezone": "EDT",
+          "validRanges": [
+            "1d",
+            "5d"
+          ]
+        },
+        "timestamp": [
+          1789763385
+        ]
+      }
+    ]
+  }
+}
