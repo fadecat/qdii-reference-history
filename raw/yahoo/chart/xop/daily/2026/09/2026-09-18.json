@@ -7,74 +7,74 @@
           "adjclose": [
             {
               "adjclose": [
-                193.47000122070312,
                 199.6999969482422,
                 191.8000030517578,
                 192.58999633789062,
-                190.61000061035156
+                190.61000061035156,
+                null
               ]
             }
           ],
           "quote": [
             {
               "close": [
-                193.47000122070312,
                 199.6999969482422,
                 191.8000030517578,
                 192.58999633789062,
-                190.61000061035156
+                190.61000061035156,
+                null
               ],
               "high": [
-                199.4600067138672,
                 200.88999938964844,
                 196.24000549316406,
                 193.02999877929688,
-                193.14999389648438
+                193.16000366210938,
+                188.90499877929688
               ],
               "low": [
-                192.99000549316406,
                 194.52000427246094,
                 190.66000366210938,
                 189.25,
-                190.57000732421875
+                190.5500030517578,
+                184.3074951171875
               ],
               "open": [
-                198.86000061035156,
                 194.74000549316406,
                 195.91000366210938,
                 189.8000030517578,
-                192.7899932861328
+                192.7899932861328,
+                187.57000732421875
               ],
               "volume": [
-                3794500,
                 3352400,
                 7195300,
                 3618900,
-                2721916
+                2722900,
+                3207784
               ]
             }
           ]
         },
         "meta": {
-          "chartPreviousClose": 195.72,
+          "chartPreviousClose": 193.47,
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
-              "end": 1789776000,
+              "end": 1790035200,
               "gmtoffset": -14400,
-              "start": 1789761600,
+              "start": 1790020800,
               "timezone": "EDT"
             },
             "pre": {
-              "end": 1789738200,
+              "end": 1789997400,
               "gmtoffset": -14400,
-              "start": 1789718400,
+              "start": 1789977600,
               "timezone": "EDT"
             },
             "regular": {
-              "end": 1789761600,
+              "end": 1790020800,
               "gmtoffset": -14400,
-              "start": 1789738200,
+              "start": 1789997400,
               "timezone": "EDT"
             }
           },
@@ -85,21 +85,21 @@
           "fiftyTwoWeekLow": 122.11,
           "firstTradeDate": 1150983000,
           "fullExchangeName": "NYSEArca",
-          "fulldayChange": -1.98,
-          "fulldayChangePercent": -1.028,
-          "fulldayPrice": 190.76,
+          "fulldayChange": -5.103,
+          "fulldayChangePercent": -2.688,
+          "fulldayPrice": 184.75,
           "gmtoffset": -14400,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
           "longName": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketChangePercent": -1.028,
-          "regularMarketDayHigh": 193.15,
-          "regularMarketDayLow": 190.57,
-          "regularMarketPrice": 190.61,
-          "regularMarketTime": 1789761600,
-          "regularMarketVolume": 2721916,
+          "regularMarketChangePercent": -2.688,
+          "regularMarketDayHigh": 188.905,
+          "regularMarketDayLow": 184.307,
+          "regularMarketPrice": 184.75,
+          "regularMarketTime": 1790020800,
+          "regularMarketVolume": 3207784,
           "shortName": "State Street SPDR S&P Oil & Gas",
           "symbol": "XOP",
           "timezone": "EDT",
@@ -118,11 +118,11 @@
           ]
         },
         "timestamp": [
-          1789392600,
           1789479000,
           1789565400,
           1789651800,
-          1789738200
+          1789738200,
+          1789997400
         ]
       }
     ]
