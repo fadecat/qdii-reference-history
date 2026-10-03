@@ -7,74 +7,74 @@
           "adjclose": [
             {
               "adjclose": [
-                181.5,
                 180.13999938964844,
                 178.6300048828125,
                 179.3300018310547,
-                184.3000030517578
+                184.3000030517578,
+                null
               ]
             }
           ],
           "quote": [
             {
               "close": [
-                181.5,
                 180.13999938964844,
                 178.6300048828125,
                 179.3300018310547,
-                184.3000030517578
+                184.3000030517578,
+                null
               ],
               "high": [
-                182.25999450683594,
                 183.67999267578125,
                 179.69000244140625,
                 181.85000610351562,
-                184.5500030517578
+                184.55999755859375,
+                185.5
               ],
               "low": [
-                179.69000244140625,
                 179.92999267578125,
                 176.47000122070312,
                 179.0500030517578,
-                178.4300994873047
+                178.42999267578125,
+                181.75999450683594
               ],
               "open": [
-                181.4499969482422,
                 183.52999877929688,
                 177.44000244140625,
                 179.72999572753906,
-                178.97000122070312
+                178.97000122070312,
+                182.1699981689453
               ],
               "volume": [
-                4720000,
                 3551900,
                 3151300,
                 2096600,
-                3310860
+                3311700,
+                2264939
               ]
             }
           ]
         },
         "meta": {
-          "chartPreviousClose": 184.05,
+          "chartPreviousClose": 181.5,
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
-              "end": 1790899200,
+              "end": 1790985600,
               "gmtoffset": -14400,
-              "start": 1790884800,
+              "start": 1790971200,
               "timezone": "EDT"
             },
             "pre": {
-              "end": 1790861400,
+              "end": 1790947800,
               "gmtoffset": -14400,
-              "start": 1790841600,
+              "start": 1790928000,
               "timezone": "EDT"
             },
             "regular": {
-              "end": 1790884800,
+              "end": 1790971200,
               "gmtoffset": -14400,
-              "start": 1790861400,
+              "start": 1790947800,
               "timezone": "EDT"
             }
           },
@@ -85,21 +85,21 @@
           "fiftyTwoWeekLow": 122.11,
           "firstTradeDate": 1150983000,
           "fullExchangeName": "NYSEArca",
-          "fulldayChange": 4.97,
-          "fulldayChangePercent": 2.771,
-          "fulldayPrice": 184.6,
+          "fulldayChange": 0.63,
+          "fulldayChangePercent": 0.342,
+          "fulldayPrice": 184.93,
           "gmtoffset": -14400,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
           "longName": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketChangePercent": 2.771,
-          "regularMarketDayHigh": 184.55,
-          "regularMarketDayLow": 178.43,
-          "regularMarketPrice": 184.3,
-          "regularMarketTime": 1790884800,
-          "regularMarketVolume": 3310860,
+          "regularMarketChangePercent": 0.342,
+          "regularMarketDayHigh": 185.5,
+          "regularMarketDayLow": 181.76,
+          "regularMarketPrice": 184.93,
+          "regularMarketTime": 1790971200,
+          "regularMarketVolume": 2264939,
           "shortName": "State Street SPDR S&P Oil & Gas",
           "symbol": "XOP",
           "timezone": "EDT",
@@ -118,11 +118,11 @@
           ]
         },
         "timestamp": [
-          1790343000,
           1790602200,
           1790688600,
           1790775000,
-          1790861400
+          1790861400,
+          1790947800
         ]
       }
     ]
