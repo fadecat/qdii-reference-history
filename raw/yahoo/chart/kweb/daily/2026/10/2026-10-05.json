@@ -7,74 +7,74 @@
           "adjclose": [
             {
               "adjclose": [
-                24.3700008392334,
                 24.510000228881836,
                 24.329999923706055,
                 23.860000610351562,
-                24.559999465942383
+                24.559999465942383,
+                null
               ]
             }
           ],
           "quote": [
             {
               "close": [
-                24.3700008392334,
                 24.510000228881836,
                 24.329999923706055,
                 23.860000610351562,
-                24.559999465942383
+                24.559999465942383,
+                null
               ],
               "high": [
-                24.489999771118164,
                 24.674999237060547,
                 24.7549991607666,
                 24.079999923706055,
-                24.6299991607666
+                24.6299991607666,
+                24.59000015258789
               ],
               "low": [
-                24.209999084472656,
                 24.454999923706055,
                 24.229999542236328,
                 23.780000686645508,
-                24.149999618530273
+                24.149999618530273,
+                24.299999237060547
               ],
               "open": [
-                24.485000610351562,
                 24.579999923706055,
                 24.510000228881836,
                 24.03499984741211,
-                24.19499969482422
+                24.19499969482422,
+                24.489999771118164
               ],
               "volume": [
-                16071600,
                 22231900,
                 13421300,
                 21209900,
-                25504600
+                25504600,
+                9605680
               ]
             }
           ]
         },
         "meta": {
-          "chartPreviousClose": 24.66,
+          "chartPreviousClose": 24.37,
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
-              "end": 1791244800,
+              "end": 1791331200,
               "gmtoffset": -14400,
-              "start": 1791230400,
+              "start": 1791316800,
               "timezone": "EDT"
             },
             "pre": {
-              "end": 1791207000,
+              "end": 1791293400,
               "gmtoffset": -14400,
-              "start": 1791187200,
+              "start": 1791273600,
               "timezone": "EDT"
             },
             "regular": {
-              "end": 1791230400,
+              "end": 1791316800,
               "gmtoffset": -14400,
-              "start": 1791207000,
+              "start": 1791293400,
               "timezone": "EDT"
             }
           },
@@ -85,21 +85,21 @@
           "fiftyTwoWeekLow": 23.23,
           "firstTradeDate": 1375363800,
           "fullExchangeName": "NYSEArca",
-          "fulldayChange": 0.66,
-          "fulldayChangePercent": 2.766,
-          "fulldayPrice": 24.56,
+          "fulldayChange": 0.02,
+          "fulldayChangePercent": 0.081,
+          "fulldayPrice": 24.54,
           "gmtoffset": -14400,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
           "longName": "KraneShares CSI China Internet ETF",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketChangePercent": 2.934,
-          "regularMarketDayHigh": 24.63,
-          "regularMarketDayLow": 24.155,
-          "regularMarketPrice": 24.56,
-          "regularMarketTime": 1791230400,
-          "regularMarketVolume": 25495867,
+          "regularMarketChangePercent": -0.081,
+          "regularMarketDayHigh": 24.59,
+          "regularMarketDayLow": 24.3,
+          "regularMarketPrice": 24.54,
+          "regularMarketTime": 1791316800,
+          "regularMarketVolume": 9605680,
           "shortName": "KraneShares CSI China Internet ",
           "symbol": "KWEB",
           "timezone": "EDT",
@@ -118,11 +118,11 @@
           ]
         },
         "timestamp": [
-          1790688600,
           1790775000,
           1790861400,
           1790947800,
-          1791207000
+          1791207000,
+          1791293400
         ]
       }
     ]

@@ -1,7 +1,7 @@
 {
-  "captured_at_new_york": "2026-10-05T21:43:47.172021-04:00",
-  "captured_at_shanghai": "2026-10-06T09:43:47.172021+08:00",
-  "captured_at_utc": "2026-10-06T01:43:47.172021+00:00",
+  "captured_at_new_york": "2026-10-06T20:00:27.944675-04:00",
+  "captured_at_shanghai": "2026-10-07T08:00:27.944675+08:00",
+  "captured_at_utc": "2026-10-07T00:00:27.944675+00:00",
   "formula": "kweb_nav = market_close * (1 - premium_discount)",
   "krane_premium_discount_row": {
     "premium_discount": 0.011509168,
@@ -35,6 +35,6 @@
     "exchange_name": "PCX",
     "instrument_type": "ETF",
     "previous_close": null,
-    "regular_market_price": 24.56
+    "regular_market_price": 24.54
   }
 }
