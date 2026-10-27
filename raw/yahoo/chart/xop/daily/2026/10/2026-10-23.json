@@ -7,99 +7,99 @@
           "adjclose": [
             {
               "adjclose": [
-                199.47000122070312,
                 200.0500030517578,
                 199.02000427246094,
                 196.8699951171875,
-                201.69000244140625
+                201.69000244140625,
+                null
               ]
             }
           ],
           "quote": [
             {
               "close": [
-                199.47000122070312,
                 200.0500030517578,
                 199.02000427246094,
                 196.8699951171875,
-                201.69000244140625
+                201.69000244140625,
+                null
               ],
               "high": [
-                202.27999877929688,
                 201.63999938964844,
                 200.66000366210938,
                 200.86000061035156,
-                203.58999633789062
+                203.60000610351562,
+                206.0500030517578
               ],
               "low": [
-                198.88999938964844,
                 196.17999267578125,
                 197.00999450683594,
                 193.05999755859375,
-                197.18499755859375
+                197.19000244140625,
+                200.0050048828125
               ],
               "open": [
-                199.35000610351562,
                 201.52000427246094,
                 199.52000427246094,
                 200.24000549316406,
-                198.08999633789062
+                198.08999633789062,
+                200.0399932861328
               ],
               "volume": [
-                1954500,
                 2103700,
                 2032300,
                 4205900,
-                2530490
+                2531400,
+                2242915
               ]
             }
           ]
         },
         "meta": {
-          "chartPreviousClose": 200.38,
+          "chartPreviousClose": 199.47,
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
-              "end": 1792800000,
+              "end": 1793059200,
               "gmtoffset": -14400,
-              "start": 1792785600,
+              "start": 1793044800,
               "timezone": "EDT"
             },
             "pre": {
-              "end": 1792762200,
+              "end": 1793021400,
               "gmtoffset": -14400,
-              "start": 1792742400,
+              "start": 1793001600,
               "timezone": "EDT"
             },
             "regular": {
-              "end": 1792785600,
+              "end": 1793044800,
               "gmtoffset": -14400,
-              "start": 1792762200,
+              "start": 1793021400,
               "timezone": "EDT"
             }
           },
           "dataGranularity": "1d",
           "exchangeName": "PCX",
           "exchangeTimezoneName": "America/New_York",
-          "fiftyTwoWeekHigh": 203.59,
+          "fiftyTwoWeekHigh": 206.05,
           "fiftyTwoWeekLow": 123.16,
           "firstTradeDate": 1150983000,
           "fullExchangeName": "NYSEArca",
-          "fulldayChange": 4.925,
-          "fulldayChangePercent": 2.502,
-          "fulldayPrice": 201.795,
+          "fulldayChange": 2.95,
+          "fulldayChangePercent": 1.463,
+          "fulldayPrice": 204.86,
           "gmtoffset": -14400,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
           "longName": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketChangePercent": 2.448,
-          "regularMarketDayHigh": 203.59,
-          "regularMarketDayLow": 197.185,
-          "regularMarketPrice": 201.69,
-          "regularMarketTime": 1792785600,
-          "regularMarketVolume": 2530490,
+          "regularMarketChangePercent": 1.572,
+          "regularMarketDayHigh": 206.05,
+          "regularMarketDayLow": 200.005,
+          "regularMarketPrice": 204.86,
+          "regularMarketTime": 1793044800,
+          "regularMarketVolume": 2242915,
           "shortName": "State Street SPDR S&P Oil & Gas",
           "symbol": "XOP",
           "timezone": "EDT",
@@ -118,11 +118,11 @@
           ]
         },
         "timestamp": [
-          1792416600,
           1792503000,
           1792589400,
           1792675800,
-          1792762200
+          1792762200,
+          1793021400
         ]
       }
     ]
