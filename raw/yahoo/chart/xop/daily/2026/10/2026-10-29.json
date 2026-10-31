@@ -7,74 +7,74 @@
           "adjclose": [
             {
               "adjclose": [
-                201.69000244140625,
                 204.86000061035156,
                 200.00999450683594,
                 200.3699951171875,
-                199.52000427246094
+                199.52000427246094,
+                null
               ]
             }
           ],
           "quote": [
             {
               "close": [
-                201.69000244140625,
                 204.86000061035156,
                 200.00999450683594,
                 200.3699951171875,
-                199.52000427246094
+                199.52000427246094,
+                null
               ],
               "high": [
-                203.60000610351562,
                 206.0500030517578,
                 205.13999938964844,
                 202.2100067138672,
-                201.5800018310547
+                201.5800018310547,
+                203.9600067138672
               ],
               "low": [
-                197.19000244140625,
                 199.86000061035156,
                 199.0399932861328,
                 199.4199981689453,
-                197.97000122070312
+                197.97000122070312,
+                200.58999633789062
               ],
               "open": [
-                198.08999633789062,
                 200.0399932861328,
                 203.74000549316406,
                 202.0500030517578,
-                201.07000732421875
+                201.07000732421875,
+                201.22000122070312
               ],
               "volume": [
-                2531400,
                 2246400,
                 2636200,
                 1810900,
-                1051957
+                1058600,
+                4002933
               ]
             }
           ]
         },
         "meta": {
-          "chartPreviousClose": 196.87,
+          "chartPreviousClose": 201.69,
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
-              "end": 1793318400,
+              "end": 1793404800,
               "gmtoffset": -14400,
-              "start": 1793304000,
+              "start": 1793390400,
               "timezone": "EDT"
             },
             "pre": {
-              "end": 1793280600,
+              "end": 1793367000,
               "gmtoffset": -14400,
-              "start": 1793260800,
+              "start": 1793347200,
               "timezone": "EDT"
             },
             "regular": {
-              "end": 1793304000,
+              "end": 1793390400,
               "gmtoffset": -14400,
-              "start": 1793280600,
+              "start": 1793367000,
               "timezone": "EDT"
             }
           },
@@ -85,21 +85,21 @@
           "fiftyTwoWeekLow": 123.16,
           "firstTradeDate": 1150983000,
           "fullExchangeName": "NYSEArca",
-          "fulldayChange": -0.07,
-          "fulldayChangePercent": -0.035,
-          "fulldayPrice": 200.3,
+          "fulldayChange": 3.88,
+          "fulldayChangePercent": 1.945,
+          "fulldayPrice": 203.76,
           "gmtoffset": -14400,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
           "longName": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketChangePercent": -0.424,
-          "regularMarketDayHigh": 201.58,
-          "regularMarketDayLow": 197.97,
-          "regularMarketPrice": 199.52,
-          "regularMarketTime": 1793304000,
-          "regularMarketVolume": 1051957,
+          "regularMarketChangePercent": 2.125,
+          "regularMarketDayHigh": 203.96,
+          "regularMarketDayLow": 200.59,
+          "regularMarketPrice": 203.76,
+          "regularMarketTime": 1793390400,
+          "regularMarketVolume": 4002933,
           "shortName": "State Street SPDR S&P Oil & Gas",
           "symbol": "XOP",
           "timezone": "EDT",
@@ -118,11 +118,11 @@
           ]
         },
         "timestamp": [
-          1792762200,
           1793021400,
           1793107800,
           1793194200,
-          1793280600
+          1793280600,
+          1793367000
         ]
       }
     ]
