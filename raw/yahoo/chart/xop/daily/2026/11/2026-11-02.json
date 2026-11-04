@@ -7,74 +7,74 @@
           "adjclose": [
             {
               "adjclose": [
-                200.00999450683594,
                 200.3699951171875,
                 199.52000427246094,
                 203.75999450683594,
-                193.55999755859375
+                193.55999755859375,
+                null
               ]
             }
           ],
           "quote": [
             {
               "close": [
-                200.00999450683594,
                 200.3699951171875,
                 199.52000427246094,
                 203.75999450683594,
-                193.55999755859375
+                193.55999755859375,
+                null
               ],
               "high": [
-                205.13999938964844,
                 202.2100067138672,
                 201.5800018310547,
                 203.97000122070312,
-                201.1300048828125
+                201.1300048828125,
+                194.24000549316406
               ],
               "low": [
-                199.0399932861328,
                 199.4199981689453,
                 197.97000122070312,
                 200.58999633789062,
-                193.30999755859375
+                193.30999755859375,
+                191.42999267578125
               ],
               "open": [
-                203.74000549316406,
                 202.0500030517578,
                 201.07000732421875,
                 201.22000122070312,
-                199.47999572753906
+                199.47999572753906,
+                192.22000122070312
               ],
               "volume": [
-                2636200,
                 1810900,
                 1058600,
                 4016600,
-                5625300
+                5625300,
+                3219233
               ]
             }
           ]
         },
         "meta": {
-          "chartPreviousClose": 204.86,
+          "chartPreviousClose": 200.01,
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
-              "end": 1793667600,
+              "end": 1793754000,
               "gmtoffset": -18000,
-              "start": 1793653200,
+              "start": 1793739600,
               "timezone": "EST"
             },
             "pre": {
-              "end": 1793629800,
+              "end": 1793716200,
               "gmtoffset": -18000,
-              "start": 1793610000,
+              "start": 1793696400,
               "timezone": "EST"
             },
             "regular": {
-              "end": 1793653200,
+              "end": 1793739600,
               "gmtoffset": -18000,
-              "start": 1793629800,
+              "start": 1793716200,
               "timezone": "EST"
             }
           },
@@ -85,21 +85,21 @@
           "fiftyTwoWeekLow": 123.16,
           "firstTradeDate": 1150983000,
           "fullExchangeName": "NYSEArca",
-          "fulldayChange": -10.01,
-          "fulldayChangePercent": -4.913,
-          "fulldayPrice": 193.75,
+          "fulldayChange": -2.04,
+          "fulldayChangePercent": -1.054,
+          "fulldayPrice": 191.52,
           "gmtoffset": -18000,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
           "longName": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketChangePercent": -5.006,
-          "regularMarketDayHigh": 201.13,
-          "regularMarketDayLow": 193.31,
-          "regularMarketPrice": 193.56,
-          "regularMarketTime": 1793653200,
-          "regularMarketVolume": 5627519,
+          "regularMarketChangePercent": -1.054,
+          "regularMarketDayHigh": 194.24,
+          "regularMarketDayLow": 191.43,
+          "regularMarketPrice": 191.52,
+          "regularMarketTime": 1793739600,
+          "regularMarketVolume": 3219233,
           "shortName": "State Street SPDR S&P Oil & Gas",
           "symbol": "XOP",
           "timezone": "EST",
@@ -118,11 +118,11 @@
           ]
         },
         "timestamp": [
-          1793107800,
           1793194200,
           1793280600,
           1793367000,
-          1793629800
+          1793629800,
+          1793716200
         ]
       }
     ]
