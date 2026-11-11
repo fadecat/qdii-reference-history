@@ -1,11 +1,11 @@
 {
-  "captured_at_new_york": "2026-11-09T22:27:09.888930-05:00",
-  "captured_at_shanghai": "2026-11-10T11:27:09.888930+08:00",
-  "captured_at_utc": "2026-11-10T03:27:09.888930+00:00",
+  "captured_at_new_york": "2026-11-10T20:11:44.856710-05:00",
+  "captured_at_shanghai": "2026-11-11T09:11:44.856710+08:00",
+  "captured_at_utc": "2026-11-11T01:11:44.856710+00:00",
   "encoded_symbol": "XOP",
   "history_summary": {
     "bar_count": 5,
-    "latest_non_null_close_count": 5
+    "latest_non_null_close_count": 4
   },
   "instrument_label": "SPDR S&P Oil & Gas Exploration & Production ETF",
   "latest_bar": {
@@ -15,21 +15,21 @@
     "high": 175.63999938964844,
     "low": 171.2100067138672,
     "open": 172.1999969482422,
-    "regular_market_datetime": "2026-11-09T16:00:00-05:00",
+    "regular_market_datetime": "2026-11-10T16:00:00-05:00",
     "timestamp": 1794234600,
     "volume": 3557600.0
   },
   "market_date": "2026-11-09",
   "market_timezone": "America/New_York",
   "meta": {
-    "chart_previous_close": 193.56,
+    "chart_previous_close": 191.52,
     "currency": "USD",
     "exchange_name": "PCX",
     "full_exchange_name": "NYSEArca",
     "instrument_type": "ETF",
     "previous_close": null,
-    "regular_market_price": 174.15,
-    "regular_market_time": 1794258000
+    "regular_market_price": 175.52,
+    "regular_market_time": 1794344400
   },
   "provider": "yahoo_chart",
   "schema_version": 1,
