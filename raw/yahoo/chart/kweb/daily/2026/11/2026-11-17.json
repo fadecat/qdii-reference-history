@@ -7,74 +7,74 @@
           "adjclose": [
             {
               "adjclose": [
-                23.670000076293945,
                 22.90999984741211,
                 22.93000030517578,
                 22.559999465942383,
-                22.079999923706055
+                22.079999923706055,
+                null
               ]
             }
           ],
           "quote": [
             {
               "close": [
-                23.670000076293945,
                 22.90999984741211,
                 22.93000030517578,
                 22.559999465942383,
-                22.079999923706055
+                22.079999923706055,
+                null
               ],
               "high": [
-                23.875,
                 23.280000686645508,
                 22.950000762939453,
                 23.010000228881836,
-                22.354999542236328
+                22.354999542236328,
+                21.989999771118164
               ],
               "low": [
-                23.649999618530273,
                 22.860000610351562,
                 22.6200008392334,
                 22.549999237060547,
-                22.030000686645508
+                22.030000686645508,
+                21.684999465942383
               ],
               "open": [
-                23.850000381469727,
                 23.27199935913086,
                 22.6299991607666,
                 22.799999237060547,
-                22.264999389648438
+                22.264999389648438,
+                21.815000534057617
               ],
               "volume": [
-                46602500,
                 34251200,
                 22777200,
                 19282200,
-                23526500
+                23564000,
+                21550210
               ]
             }
           ]
         },
         "meta": {
-          "chartPreviousClose": 24.06,
+          "chartPreviousClose": 23.67,
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
-              "end": 1794963600,
+              "end": 1795050000,
               "gmtoffset": -18000,
-              "start": 1794949200,
+              "start": 1795035600,
               "timezone": "EST"
             },
             "pre": {
-              "end": 1794925800,
+              "end": 1795012200,
               "gmtoffset": -18000,
-              "start": 1794906000,
+              "start": 1794992400,
               "timezone": "EST"
             },
             "regular": {
-              "end": 1794949200,
+              "end": 1795035600,
               "gmtoffset": -18000,
-              "start": 1794925800,
+              "start": 1795012200,
               "timezone": "EST"
             }
           },
@@ -82,24 +82,24 @@
           "exchangeName": "PCX",
           "exchangeTimezoneName": "America/New_York",
           "fiftyTwoWeekHigh": 38.215,
-          "fiftyTwoWeekLow": 22.03,
+          "fiftyTwoWeekLow": 21.685,
           "firstTradeDate": 1375363800,
           "fullExchangeName": "NYSEArca",
-          "fulldayChange": -0.62,
-          "fulldayChangePercent": -2.748,
-          "fulldayPrice": 21.94,
+          "fulldayChange": -0.43,
+          "fulldayChangePercent": -1.947,
+          "fulldayPrice": 21.65,
           "gmtoffset": -18000,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
           "longName": "KraneShares CSI China Internet ETF",
           "priceHint": 2,
           "range": "5d",
-          "regularMarketChangePercent": -2.128,
-          "regularMarketDayHigh": 22.355,
-          "regularMarketDayLow": 22.03,
-          "regularMarketPrice": 22.08,
-          "regularMarketTime": 1794949200,
-          "regularMarketVolume": 23503785,
+          "regularMarketChangePercent": -1.676,
+          "regularMarketDayHigh": 21.99,
+          "regularMarketDayLow": 21.685,
+          "regularMarketPrice": 21.71,
+          "regularMarketTime": 1795035600,
+          "regularMarketVolume": 21550210,
           "shortName": "KraneShares CSI China Internet ",
           "symbol": "KWEB",
           "timezone": "EST",
@@ -118,11 +118,11 @@
           ]
         },
         "timestamp": [
-          1794407400,
           1794493800,
           1794580200,
           1794839400,
-          1794925800
+          1794925800,
+          1795012200
         ]
       }
     ]
