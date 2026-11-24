@@ -60,21 +60,21 @@
           "currency": "USD",
           "currentTradingPeriod": {
             "post": {
-              "end": 1795482000,
+              "end": 1795568400,
               "gmtoffset": -18000,
-              "start": 1795467600,
+              "start": 1795554000,
               "timezone": "EST"
             },
             "pre": {
-              "end": 1795444200,
+              "end": 1795530600,
               "gmtoffset": -18000,
-              "start": 1795424400,
+              "start": 1795510800,
               "timezone": "EST"
             },
             "regular": {
-              "end": 1795467600,
+              "end": 1795554000,
               "gmtoffset": -18000,
-              "start": 1795444200,
+              "start": 1795530600,
               "timezone": "EST"
             }
           },
