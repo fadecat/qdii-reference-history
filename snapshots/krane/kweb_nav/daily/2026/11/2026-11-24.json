@@ -1,7 +1,7 @@
 {
-  "captured_at_new_york": "2026-11-24T22:30:49.852749-05:00",
-  "captured_at_shanghai": "2026-11-25T11:30:49.852749+08:00",
-  "captured_at_utc": "2026-11-25T03:30:49.852749+00:00",
+  "captured_at_new_york": "2026-11-24T22:40:40.986069-05:00",
+  "captured_at_shanghai": "2026-11-25T11:40:40.986069+08:00",
+  "captured_at_utc": "2026-11-25T03:40:40.986069+00:00",
   "formula": "kweb_nav = market_close * (1 - premium_discount)",
   "krane_premium_discount_row": {
     "premium_discount": 0.006513652,
