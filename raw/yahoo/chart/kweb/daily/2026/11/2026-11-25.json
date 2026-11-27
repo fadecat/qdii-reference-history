@@ -50,7 +50,7 @@
                 37746700,
                 22435800,
                 28337200,
-                30491500
+                30566600
               ]
             }
           ]
@@ -87,7 +87,7 @@
           "fullExchangeName": "NYSEArca",
           "fulldayChange": 0.21,
           "fulldayChangePercent": 0.993,
-          "fulldayPrice": 21.17,
+          "fulldayPrice": 21.36,
           "gmtoffset": -18000,
           "hasPrePostMarketData": true,
           "instrumentType": "ETF",
