@@ -1,0 +1,130 @@
+{
+  "chart": {
+    "error": null,
+    "result": [
+      {
+        "indicators": {
+          "adjclose": [
+            {
+              "adjclose": [
+                20.719999313354492,
+                21.40999984741211,
+                21.149999618530273,
+                21.170000076293945,
+                22.110000610351562
+              ]
+            }
+          ],
+          "quote": [
+            {
+              "close": [
+                20.719999313354492,
+                21.40999984741211,
+                21.149999618530273,
+                21.170000076293945,
+                22.110000610351562
+              ],
+              "high": [
+                21.225000381469727,
+                21.59000015258789,
+                21.19499969482422,
+                21.219999313354492,
+                22.325000762939453
+              ],
+              "low": [
+                20.670000076293945,
+                21.190000534057617,
+                20.8799991607666,
+                20.440000534057617,
+                22.040000915527344
+              ],
+              "open": [
+                21.079999923706055,
+                21.5049991607666,
+                20.934999465942383,
+                20.510000228881836,
+                22.1200008392334
+              ],
+              "volume": [
+                37746700,
+                22435800,
+                28337200,
+                30566600,
+                28256800
+              ]
+            }
+          ]
+        },
+        "meta": {
+          "chartPreviousClose": 21.31,
+          "currency": "USD",
+          "currentTradingPeriod": {
+            "post": {
+              "end": 1795827600,
+              "gmtoffset": -18000,
+              "start": 1795802400,
+              "timezone": "EST"
+            },
+            "pre": {
+              "end": 1795789800,
+              "gmtoffset": -18000,
+              "start": 1795770000,
+              "timezone": "EST"
+            },
+            "regular": {
+              "end": 1795802400,
+              "gmtoffset": -18000,
+              "start": 1795789800,
+              "timezone": "EST"
+            }
+          },
+          "dataGranularity": "1d",
+          "exchangeName": "PCX",
+          "exchangeTimezoneName": "America/New_York",
+          "fiftyTwoWeekHigh": 38.215,
+          "fiftyTwoWeekLow": 20.44,
+          "firstTradeDate": 1375363800,
+          "fullExchangeName": "NYSEArca",
+          "fulldayChange": 0.92,
+          "fulldayChangePercent": 4.346,
+          "fulldayPrice": 22.11,
+          "gmtoffset": -18000,
+          "hasPrePostMarketData": true,
+          "instrumentType": "ETF",
+          "longName": "KraneShares CSI China Internet ETF",
+          "priceHint": 2,
+          "range": "5d",
+          "regularMarketChangePercent": 4.44,
+          "regularMarketDayHigh": 22.325,
+          "regularMarketDayLow": 22.045,
+          "regularMarketPrice": 22.11,
+          "regularMarketTime": 1795802400,
+          "regularMarketVolume": 28256809,
+          "shortName": "KraneShares CSI China Internet ",
+          "symbol": "KWEB",
+          "timezone": "EST",
+          "validRanges": [
+            "1d",
+            "5d",
+            "1mo",
+            "3mo",
+            "6mo",
+            "1y",
+            "2y",
+            "5y",
+            "10y",
+            "ytd",
+            "max"
+          ]
+        },
+        "timestamp": [
+          1795185000,
+          1795444200,
+          1795530600,
+          1795617000,
+          1795789800
+        ]
+      }
+    ]
+  }
+}
